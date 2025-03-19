@@ -57,35 +57,14 @@
   </ion-segment-button>
 </ion-segment>
 
-<ion-note
-  >The above segment component admittedly has no relation to the planet Neptune.
-  Instead, it demonstrates a useful UI tool, similar to these toggles:</ion-note
->
-
-<ion-list>
-  <ion-item>
-    <ion-toggle>Default Toggle</ion-toggle>
-  </ion-item>
-
-  <ion-item>
-    <ion-toggle checked={true}>Checked Toggle</ion-toggle>
-  </ion-item>
-
-  <ion-item>
-    <ion-toggle disabled={true}>Disabled Toggle</ion-toggle>
-  </ion-item>
-
-  <ion-item>
-    <ion-toggle checked={true} disabled={true}
-      >Disabled Checked Toggle</ion-toggle
-    >
-  </ion-item>
-</ion-list>
+<ion-note>
+  The above segment component admittedly has no relation to the planet Neptune.
+  It simply demonstrates a useful UI tool.
+</ion-note>
 
 <style>
   ion-note {
     display: inline-block;
     margin-top: 1em;
-    margin-bottom: 1em;
   }
 </style>
