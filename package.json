@@ -1,7 +1,7 @@
 {
 	"name": "@ionic-sveltekit/example",
 	"description": "Example app demonstrating a SvelteKit project with Ionic UI components",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"private": false,
 	"scripts": {
 		"dev": "vite dev --host",
