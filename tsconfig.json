@@ -3,10 +3,10 @@
 	"compilerOptions": {
     "verbatimModuleSyntax": true,
 		"typeRoots": [
-			"./node_modules/ionic-svelte"
+			"./node_modules/@ionic-sveltekit/core"
 		],
 		"types": [
-			"ionic-svelte"
+			"@ionic-sveltekit/core"
 		],
 		"allowJs": true,
 		"checkJs": true,
