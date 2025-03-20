@@ -1,7 +1,7 @@
 {
 	"name": "@ionic-sveltekit/example",
 	"description": "Example app demonstrating a SvelteKit project with Ionic UI components",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"private": false,
 	"scripts": {
 		"dev": "vite dev --host",
@@ -40,10 +40,10 @@
 	},
 	"license": "MIT",
 	"author": {
-    "name": "Brad Mallow",
-    "email": "brad.mallow@gmail.com",
-    "url": "https://bradmallow.com"
-  },
+		"name": "Brad Mallow",
+		"email": "brad.mallow@gmail.com",
+		"url": "https://bradmallow.com"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/ionic-sveltekit/example.git"
