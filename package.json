@@ -39,7 +39,11 @@
 		"sass": "^1.85.1"
 	},
 	"license": "MIT",
-	"author": "briznad@gmail.com",
+	"author": {
+    "name": "Brad Mallow",
+    "email": "brad.mallow@gmail.com",
+    "url": "https://bradmallow.com"
+  },
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/ionic-sveltekit/example.git"
