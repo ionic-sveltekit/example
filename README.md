@@ -1,6 +1,6 @@
 # @ionic-sveltekit/example
 
-This repository contains an example [Ionic](https://ionicframework.com/) project built with [SvelteKit](https://kit.svelte.dev/) and the `@ionic-sveltekit/core` integration package. It serves as the template for new projects created with the `npx @ionic-sveltekit/create` CLI tool.
+This repository contains an example [Ionic](https://ionicframework.com/) project built with [SvelteKit](https://svelte.dev/docs/kit) and the [`@ionic-sveltekit/core`](https://github.com/ionic-sveltekit/core) integration package. It serves as the template for new projects created with the [`npx @ionic-sveltekit/create`](https://github.com/ionic-sveltekit/create) CLI tool, and makes use of framework components and helpers provided by [@ionic-sveltekit/components](https://github.com/ionic-sveltekit/components).
 
 ## Features
 
