@@ -140,26 +140,26 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 
 ### Setup
 
-The recommended way to use this project is as a template through the CLI:
-
-```bash
-npx @ionic-sveltekit/create my-app
-```
-
-This will create a new project based on this example.
-
-If using the Mars weather feature, you'll need to:
-1. Get a NASA API key
-2. Create a `.env` file with your key:
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Create a `.env` file with your NASA API key:
    ```
    NASA_API_KEY=your_api_key_here
    ```
-3. Start the development server: `npm run dev`
+4. Start the development server: `npm run dev`
 
 ## Building for Production
 
 ```bash
 npm run build
+```
+
+## Using This Project as a Template
+
+This project serves as the base template when creating a new project with:
+
+```bash
+npx @ionic-sveltekit/create my-app
 ```
 
 ## License
