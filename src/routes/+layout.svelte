@@ -76,7 +76,11 @@
 </svelte:head>
 
 <ion-app>
-  <Tabs content={children} {tabs}>
+  <Tabs {tabs}>
+    {#snippet content()}
+      {@render children()}
+    {/snippet}
+
     {#snippet fixedElements()}
       <Timer />
     {/snippet}
