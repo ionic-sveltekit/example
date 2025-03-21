@@ -87,4 +87,4 @@
   </Tabs>
 </ion-app>
 
-<style lang="scss"></style>
+<style></style>
