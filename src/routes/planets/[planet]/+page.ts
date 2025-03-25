@@ -54,7 +54,7 @@ async function getDynamicImport(planet : Planet, isComponent : boolean = true) :
 			? 404
 			: 500;
 
-		if (dev || true) {
+		if (dev) {
 			console.error(status, error);
 		}
 	}
