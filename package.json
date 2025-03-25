@@ -5,8 +5,8 @@
 	"private": false,
 	"scripts": {
 		"dev": "vite dev --host",
-		"build": "vite build",
-		"build:github-actions": "vite build  && cp .env_example ./build/.env",
+		"prebuild": "if [ ! -e .env ]; then cp .env_example .env; fi",
+		"build": "npm run prebuild && vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
