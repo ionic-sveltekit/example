@@ -9,7 +9,7 @@ import { dev } from '$app/environment';
 import { NASA_API_KEY } from '$env/static/private';
 
 export const load: PageServerLoad = async ({ params, fetch }) : Promise<Partial<PlanetCardProps>> => {
-	if (params.planet !== 'mars') {
+	if (!NASA_API_KEY || params.planet !== 'mars') {
 		return {};
 	}
 
