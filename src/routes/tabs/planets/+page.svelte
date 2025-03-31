@@ -1,6 +1,8 @@
 <script lang="ts" module>
   import type { Planet } from "$components/PlanetCard.svelte";
 
+  import { getRelativeHref } from "$utilities/helper";
+
   import img from "$images/planets.jpg";
 </script>
 
@@ -43,7 +45,7 @@
 
     <ol>
       {#snippet planetLink(planet: Planet)}
-        <a href="/planets/{planet}">{planet}</a>
+        <a href={getRelativeHref(planet)}>{planet}</a>
       {/snippet}
 
       {#each Array(count) as _, index}

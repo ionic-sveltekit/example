@@ -4,7 +4,7 @@
 	"version": "0.0.10",
 	"private": false,
 	"scripts": {
-		"dev": "vite dev --host",
+		"dev": "vite dev --host --open",
 		"prebuild": "if [ ! -e .env ]; then cp .env_example .env; fi",
 		"build": "npm run prebuild && vite build",
 		"preview": "vite preview",
@@ -35,7 +35,7 @@
 	"type": "module",
 	"dependencies": {
 		"@ionic-sveltekit/components": "^0.0.3",
-		"@ionic-sveltekit/core": "^0.0.6",
+		"@ionic-sveltekit/core": "^0.0.11",
 		"ionicons": "^7.4.0",
 		"sass": "^1.85.1"
 	},

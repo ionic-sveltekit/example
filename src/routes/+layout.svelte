@@ -1,19 +1,11 @@
 <script lang="ts" module>
-  import type { Tab } from "@ionic-sveltekit/components";
-
-  import { setupIonicBase } from "@ionic-sveltekit/core";
-
-  import { homeOutline, planetOutline } from "ionicons/icons";
-
-  import { Tabs } from "@ionic-sveltekit/components";
-
-  import Timer from "$components/Timer.svelte";
+  import { initialize } from "@ionic-sveltekit/core";
 
   /* Import all components - or do partial loading - see below */
-  import "@ionic-sveltekit/core/components/all";
+  import "@ionic-sveltekit/core/dist/all";
 
   /*
-		This part - import '@ionic-sveltekit/core/components/all'; -  loads all components at once.
+		This part - import '@ionic-sveltekit/core/dist/all'; -  loads all components at once.
 
 		This adds at least >800kb (uncompressed) to your bundle - 80 components (so do your math!!)
 
@@ -24,16 +16,14 @@
 
 		Example: if you replace the line import '@ionic-sveltekit/core/components/all'; with the imports below, you will see the resulting bundle being much smaller
 
-		import '@ionic-sveltekit/core/components/ion-app';
-		import '@ionic-sveltekit/core/components/ion-card';
-		import '@ionic-sveltekit/core/components/ion-card-title';
-		import '@ionic-sveltekit/core/components/ion-card-subtitle';
-		import '@ionic-sveltekit/core/components/ion-card-header';
-		import '@ionic-sveltekit/core/components/ion-card-content';
-		import '@ionic-sveltekit/core/components/ion-chip';
-		import '@ionic-sveltekit/core/components/ion-button';
-
-		Open @ionic-sveltekit/core/components/all to view the full list of possible imports
+		import '@ionic-sveltekit/core/dist/components/ion-app';
+		import '@ionic-sveltekit/core/dist/components/ion-card';
+		import '@ionic-sveltekit/core/dist/components/ion-card-title';
+		import '@ionic-sveltekit/core/dist/components/ion-card-subtitle';
+		import '@ionic-sveltekit/core/dist/components/ion-card-header';
+		import '@ionic-sveltekit/core/dist/components/ion-card-content';
+		import '@ionic-sveltekit/core/dist/components/ion-chip';
+		import '@ionic-sveltekit/core/dist/components/ion-button';
 	*/
 
   /* Global CSS */
@@ -45,25 +35,11 @@
 
 <script lang="ts">
   /* Call Ionic's setup routine */
-  setupIonicBase({
-    mode: "ios",
+  initialize({
+    // mode: "ios", // or "md"
   });
 
   let { children } = $props();
-
-  const tabs: Tab[] = [
-    {
-      link: "/",
-      title: "Homepage",
-      icon: homeOutline,
-    },
-    {
-      link: "/planets",
-      title: "Planets",
-      icon: planetOutline,
-      activeOnDescendent: true,
-    },
-  ];
 </script>
 
 <svelte:head>
@@ -76,15 +52,7 @@
 </svelte:head>
 
 <ion-app>
-  <Tabs {tabs}>
-    {#snippet content()}
-      {@render children()}
-    {/snippet}
-
-    {#snippet fixedElements()}
-      <Timer />
-    {/snippet}
-  </Tabs>
+  {@render children()}
 </ion-app>
 
 <style></style>
