@@ -14,6 +14,10 @@
       <ion-item href="/tabs" detail={true}>
         <ion-label>tab interface example</ion-label>
       </ion-item>
+
+      <ion-item href="/ion-page" detail={true}>
+        <ion-label>ion-page example</ion-label>
+      </ion-item>
     </ion-list>
   </ion-card-content>
 </ion-card>
