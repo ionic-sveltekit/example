@@ -3,7 +3,7 @@
 
   import { homeOutline, planetOutline } from "ionicons/icons";
 
-  import { Tabs } from "@ionic-sveltekit/components";
+  import Tabs from "$components/Tabs.svelte";
 
   import Timer from "$components/Timer.svelte";
 </script>
